@@ -1,0 +1,31 @@
+﻿@model List<Trading_Cards.Models.Card>
+
+<h2>Trading Cards</h2>
+<a asp-controller="Cards" asp-action="Create" class="btn btn-primary">Add New Card</a>
+<br />
+<br />
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Anime</th>
+        <th>Type</th>
+        <th>Rarity</th>
+        <th>Value</th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var card in Model)
+    {
+        <tr>
+            <td>@card.CardName</td>
+            <td>@card.Anime</td>
+            <td>@card.Type</td>
+            <td>@card.Rarity</td>
+            <td>@card.Value</td>
+            <td>
+                <a asp-controller="Cards" asp-action="Edit" asp-route-id="@card.Id">Edit</a> |
+                <a asp-controller="Cards" asp-action="Delete" asp-route-id="@card.Id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

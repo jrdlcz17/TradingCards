@@ -1,0 +1,45 @@
+﻿@model Trading_Cards.Models.Card
+
+<h2 style="text-align:center;">Add New Card</h2>
+
+<div style="display:flex; justify-content:center;">
+    <form asp-action="Create" method="post" style="width:300px;">
+
+        <div>
+            <label>Card Name:</label><br />
+            <input asp-for="CardName" style="width:100%;" />
+        </div>
+
+        <div>
+            <label>Anime:</label><br />
+            <input asp-for="Anime" style="width:100%;" />
+        </div>
+
+        <div>
+            <label>Type:</label><br />
+            <input asp-for="Type" style="width:100%;" />
+        </div>
+
+        <div>
+            <label>Rarity:</label><br />
+            <input asp-for="Rarity" style="width:100%;" />
+        </div>
+
+        <div>
+            <label>Condition:</label><br />
+            <input asp-for="Condition" style="width:100%;" />
+        </div>
+
+        <div>
+            <label>Value:</label><br />
+            <input asp-for="Value" style="width:100%;" />
+        </div>
+
+        <br />
+
+        <div style="text-align:center;">
+            <button type="submit">Save</button>
+        </div>
+
+    </form>
+</div>

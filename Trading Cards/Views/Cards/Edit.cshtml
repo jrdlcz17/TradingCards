@@ -1,0 +1,27 @@
+﻿@model Trading_Cards.Models.Card
+
+<h2>Edit Card</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <label>Card Name:</label>
+    <input asp-for="CardName" /><br />
+
+    <label>Anime:</label>
+    <input asp-for="Anime" /><br />
+
+    <label>Type:</label>
+    <input asp-for="Type" /><br />
+
+    <label>Rarity:</label>
+    <input asp-for="Rarity" /><br />
+
+    <label>Condition:</label>
+    <input asp-for="Condition" /><br />
+
+    <label>Value:</label>
+    <input asp-for="Value" /><br /><br />
+
+    <button type="submit">Update</button>
+</form>
