@@ -1,5 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSingleton<Trading_Cards.Services.CardService>();
+builder.Services.AddHttpClient<Trading_Cards.Services.GeminiService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

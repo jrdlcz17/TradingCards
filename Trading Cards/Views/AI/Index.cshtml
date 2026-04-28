@@ -1,0 +1,17 @@
+﻿<h2>AI Trading Card Assistant</h2>
+
+<form asp-controller="AI" asp-action="Ask" method="post">
+    <label>Ask a question about your trading cards:</label><br />
+    <input type="text" name="question" style="width:400px;" />
+    <button type="submit">Ask</button>
+</form>
+
+@if (ViewBag.Question != null)
+{
+    <hr />
+    <h4>Your Question:</h4>
+    <p>@ViewBag.Question</p>
+
+    <h4>AI Response:</h4>
+    <p>@ViewBag.Answer</p>
+}
