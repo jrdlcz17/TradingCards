@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Trading_Cards</RootNamespace>
+    <UserSecretsId>151d09e2-b2a1-4cad-af5f-f9c0b367022a</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
